@@ -220,15 +220,16 @@
     frame.className = 'hero-visual__frame';
     frame.append(createMedia(content.hero.image, content.hero.imageAlt));
 
-    const label = document.createElement('div');
+   /*const label = document.createElement('div');
     label.className = 'hero-visual__label';
     label.innerHTML = '<span>Producción visual</span><strong>Impresión con presencia</strong>';
 
     const chip = document.createElement('div');
     chip.className = 'hero-visual__chip';
     chip.textContent = 'Diseño + impresión + presentación';
+    */
 
-    frame.append(label, chip);
+
     return frame;
   }
 

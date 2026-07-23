@@ -8,10 +8,10 @@ const imageRoutes = {
   tazas: 'images/taza.png',
   tarjetas: 'images/card.png',
   publicitario: 'images/publicitario.png',
-  galeria1: 'images/lenceria.png',
-  galeria2: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1400&q=80',
-  galeria3: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1400&q=80',
-  galeria4: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80'
+  gran_formato: 'images/gran_formato.png',
+  textiles: 'images/textiles.png',
+  promocionales: 'images/promocionales.png',
+  campagna: 'images/campagna.png'
 };
 
 // Sustituye estas rutas por archivos locales en `images/` cuando tengas tus fotografías definitivas.
@@ -22,15 +22,17 @@ window.STAMPATO_CONTENT = {
   companyLogo: imageRoutes.logo_trans,
   whatsapp: '+52 7773957777',
   address: 'Río Grijalva 442, zona 1, Vista Hermosa, 62290 Cuernavaca, Mor.',
+
   hero: {
     eyebrow: 'Impresión para marcas que quieren presencia',
     title: 'Impresión que convierte ideas en presencia.',
-    description: 'Soluciones de impresión para marcas, empresas, eventos y proyectos que necesitan hacerse notar.',
+    description: 'Creamos piezas impresas que hacen visible una idea, fortalecen una identidad y convierten cada proyecto en una experiencia de marca.',
     whatsappButtonText: 'Cotizar por WhatsApp',
     secondaryButtonText: 'Ver servicios',
     image: imageRoutes.hero,
     imageAlt: 'Mesa de trabajo con materiales impresos y piezas de diseño'
   },
+
   sectionLabels: {
     services: 'Servicios',
     gallery: 'Galería de trabajos',
@@ -39,20 +41,23 @@ window.STAMPATO_CONTENT = {
     faq: 'Preguntas frecuentes',
     contact: 'Contacto'
   },
+
   sectionTitles: {
     services: 'Soluciones de impresión para distintas necesidades',
-    gallery: 'Ejemplos visuales de materiales y piezas impresas',
+    gallery: 'Proyectos que convierten ideas en presencia',
     process: 'Una ruta clara, simple y ordenada',
-    advantages: 'Razones para trabajar con una producción cuidada',
-    faq: 'Respuestas rápidas a dudas comunes',
-    contact: 'Hablemos de tu siguiente pieza impresa'
+    advantages: 'Producción cuidada de principio a fin',
+    faq: 'Todo lo que necesitas saber antes de imprimir',
+    contact: 'Hablemos de tu siguiente proyecto'
   },
+
   contact: {
-    description: 'Comparte lo que necesitas y te respondemos por WhatsApp para revisar alcance, materiales y la mejor opción de impresión.',
+    description: 'Cuéntanos qué tienes en mente. Te ayudamos a elegir materiales, formatos y acabados para lograr una pieza que represente el nivel de tu marca.',
     whatsappButtonText: 'Abrir WhatsApp',
     mapButtonText: 'Ver dirección',
     socialTitle: 'Redes sociales'
   },
+
   nav: [
     { label: 'Inicio', href: '#inicio' },
     { label: 'Servicios', href: '#servicios' },
@@ -62,12 +67,13 @@ window.STAMPATO_CONTENT = {
     { label: 'FAQ', href: '#preguntas-frecuentes' },
     { label: 'Contacto', href: '#contacto' }
   ],
+
   services: [
     {
       image: imageRoutes.espectaculares,
       imageAlt: 'Impresión de espectacular de gran formato',
       title: 'Espectaculares y gran formato',
-      description: 'Piezas de alto impacto para dar visibilidad a campañas, lanzamientos y comunicación exterior.',
+      description: 'Impresiones de gran impacto para campañas que buscan dominar el espacio, atraer miradas y permanecer en la memoria.',
       buttonText: 'Cotizar',
       whatsappMessage: 'Hola, quiero cotizar espectaculares y gran formato.'
     },
@@ -75,7 +81,7 @@ window.STAMPATO_CONTENT = {
       image: imageRoutes.lonasViniles,
       imageAlt: 'Lonas y viniles impresos',
       title: 'Lonas y viniles',
-      description: 'Soluciones versátiles para promociones, señalización, decoración y comunicación temporal o permanente.',
+      description: 'Soluciones versátiles para escaparates, fachadas, interiores, señalización y espacios donde tu marca necesita hacerse presente.',
       buttonText: 'Cotizar',
       whatsappMessage: 'Hola, quiero cotizar lonas y viniles.'
     },
@@ -83,7 +89,7 @@ window.STAMPATO_CONTENT = {
       image: imageRoutes.playeras,
       imageAlt: 'Impresión personalizada en playeras',
       title: 'Playeras y textiles',
-      description: 'Personalización textil para equipos, marcas, activaciones y proyectos con identidad propia.',
+      description: 'Textiles personalizados que convierten una prenda, uniforme o accesorio en una extensión natural de la identidad de tu marca.',
       buttonText: 'Cotizar',
       whatsappMessage: 'Hola, quiero cotizar impresión en playeras y textiles.'
     },
@@ -91,7 +97,7 @@ window.STAMPATO_CONTENT = {
       image: imageRoutes.tazas,
       imageAlt: 'Tazas promocionales personalizadas',
       title: 'Tazas y promocionales',
-      description: 'Objetos útiles y memorables para campañas, regalos corporativos y acciones de marca.',
+      description: 'Objetos útiles y bien diseñados que acompañan a tus clientes y mantienen tu marca presente más allá de una campaña.',
       buttonText: 'Cotizar',
       whatsappMessage: 'Hola, quiero cotizar tazas y promocionales.'
     },
@@ -99,7 +105,7 @@ window.STAMPATO_CONTENT = {
       image: imageRoutes.tarjetas,
       imageAlt: 'Tarjetas, volantes y papelería impresa',
       title: 'Tarjetas, volantes y papelería',
-      description: 'Material impreso para presentación, difusión y comunicación cotidiana con acabados limpios.',
+      description: 'Papelería con materiales y acabados cuidados que transmite profesionalismo desde el primer contacto.',
       buttonText: 'Cotizar',
       whatsappMessage: 'Hola, quiero cotizar tarjetas, volantes y papelería.'
     },
@@ -107,98 +113,119 @@ window.STAMPATO_CONTENT = {
       image: imageRoutes.publicitario,
       imageAlt: 'Material publicitario personalizado',
       title: 'Material publicitario personalizado',
-      description: 'Piezas hechas a medida para puntos de venta, eventos, activaciones y campañas específicas.',
+      description: 'Piezas creadas a la medida para lanzamientos, activaciones, eventos, puntos de venta y campañas con identidad propia.',
       buttonText: 'Cotizar',
       whatsappMessage: 'Hola, quiero cotizar material publicitario personalizado.'
     }
   ],
+
   gallery: [
     {
-      image: imageRoutes.galeria1,
+      image: imageRoutes.gran_formato,
       imageAlt: 'Trabajo de impresión de gran formato',
       title: 'Gran formato con presencia visual',
-      description: 'Aplicaciones para exteriores e interiores con lectura clara y composición limpia.',
+      description: 'Proyectos donde la escala, el diseño y la calidad de impresión trabajan juntos para generar impacto.',
       buttonText: 'Cotizar',
-      whatsappMessage: 'Hola, quiero cotizar una pieza similar a la de la galería 1.'
+      whatsappMessage: 'Hola, quiero cotizar una pieza similar a gran formato con presencia visual.'
     },
     {
-      image: imageRoutes.galeria2,
+      image: imageRoutes.campagna,
       imageAlt: 'Material publicitario impreso en mesa',
       title: 'Material impreso para campañas',
-      description: 'Piezas pensadas para comunicar sin saturar y sostener la identidad visual.',
+      description: 'Una misma identidad visual aplicada con coherencia en cada pieza y en cada punto de contacto de una campaña.',
       buttonText: 'Cotizar',
-      whatsappMessage: 'Hola, quiero cotizar una pieza similar a la de la galería 2.'
+      whatsappMessage: 'Hola, quiero cotizar una pieza similar a material impreso para campañas.'
     },
     {
-      image: imageRoutes.galeria3,
+      image: imageRoutes.textiles,
       imageAlt: 'Textiles personalizados',
       title: 'Textiles personalizados',
-      description: 'Aplicaciones textiles para equipos, promociones y presencia de marca.',
+      description: 'Moda, hospitalidad, eventos y branding reunidos en textiles que elevan la percepción de una marca.',
       buttonText: 'Cotizar',
-      whatsappMessage: 'Hola, quiero cotizar una pieza similar a la de la galería 3.'
+      whatsappMessage: 'Hola, quiero cotizar una pieza similar a textiles personalizados.'
     },
     {
-      image: imageRoutes.galeria4,
+      image: imageRoutes.promocionales,
       imageAlt: 'Promocionales personalizados',
       title: 'Promocionales con identidad',
-      description: 'Objetos que acompañan la marca más allá del punto de venta.',
+      description: 'Promocionales concebidos como experiencias de marca, no como simples objetos con un logotipo.',
       buttonText: 'Cotizar',
-      whatsappMessage: 'Hola, quiero cotizar una pieza similar a la de la galería 4.'
+      whatsappMessage: 'Hola, quiero cotizar una pieza similar a promocionales con identidad.'
     }
   ],
+
   process: [
     {
       title: '1. Cuéntanos tu idea',
-      description: 'Nos compartes el tipo de pieza, el uso y el formato que tienes en mente.'
+      description: 'Conocemos el objetivo, el uso, las dimensiones, la cantidad y el contexto de tu proyecto.'
     },
     {
       title: '2. Revisamos la propuesta',
-      description: 'Aterrizamos materiales, rutas de impresión y el enfoque visual más conveniente.'
+      description: 'Definimos materiales, formatos, sistemas de impresión y acabados para encontrar la mejor solución.'
     },
     {
       title: '3. Producción',
-      description: 'Preparamos la pieza con atención al detalle y una presentación limpia.'
+      description: 'Producimos cada pieza con atención al detalle, consistencia visual y control de calidad.'
     },
     {
       title: '4. Entrega',
-      description: 'Compartimos el resultado final para que tu proyecto esté listo para usarse.'
+      description: 'Coordinamos la entrega o instalación para que tu proyecto llegue listo para destacar.'
     }
   ],
+
   advantages: [
     {
-      title: 'Diseño visual claro',
-      description: 'Una presentación sobria y legible ayuda a que cada pieza se vea profesional.'
+      title: 'Asesoría personalizada',
+      description: 'Te ayudamos a elegir materiales, dimensiones y acabados según el uso, el presupuesto y el resultado que buscas.'
     },
     {
-      title: 'Contenido editable en un solo archivo',
-      description: 'Los textos, imágenes, servicios y enlaces viven en js/content.js.'
+      title: 'Soluciones a la medida',
+      description: 'Cada proyecto se plantea según sus necesidades reales, desde una pieza especial hasta una producción completa.'
     },
     {
-      title: 'Responsive desde el inicio',
-      description: 'La composición se adapta a escritorio, tablet y celular sin depender de librerías.'
+      title: 'Calidad en cada detalle',
+      description: 'Cuidamos color, definición, materiales y acabados para lograr una presentación limpia y profesional.'
     },
     {
-      title: 'WhatsApp directo',
-      description: 'Cada botón abre un mensaje precargado con el teléfono configurado desde el contenido.'
+      title: 'Comunicación directa',
+      description: 'Mantenemos un contacto claro durante la cotización, producción y entrega para evitar sorpresas.'
     }
   ],
+
   faqs: [
     {
-      question: '¿Cómo solicito una cotización?',
-      answer: 'Usa cualquier botón de WhatsApp del sitio y envía el mensaje que ya viene preparado.'
+      question: '¿Qué información necesito para solicitar una cotización?',
+      answer: 'Compártenos el tipo de producto, las medidas, la cantidad, el uso que tendrá, el material que tienes en mente y la fecha en que lo necesitas. Si aún no conoces todos los detalles, podemos orientarte.'
     },
     {
-      question: '¿Puedo cambiar una imagen sin tocar el código?',
-      answer: 'Sí. Puedes reemplazar el archivo dentro de images/ usando el mismo nombre.'
+      question: '¿Existe una cantidad mínima de impresión?',
+      answer: 'Depende del producto y del sistema de impresión. Algunos proyectos pueden producirse desde una sola pieza, mientras que otros requieren una cantidad mínima para optimizar costos.'
     },
     {
-      question: '¿Qué pasa si una imagen no existe?',
-      answer: 'La tarjeta muestra un fondo neutro para conservar la estructura visual sin romper el diseño.'
+      question: '¿Pueden ayudarme a elegir el material y los acabados?',
+      answer: 'Sí. Revisamos el uso, la duración, el presupuesto y la apariencia que buscas para recomendarte materiales, laminados, barnices, cortes y acabados adecuados.'
     },
     {
-      question: '¿Dónde cambio el color principal?',
-      answer: 'En css/styles.css, dentro de las variables CSS del bloque :root.'
+      question: '¿En qué formato debo enviar mi archivo?',
+      answer: 'Preferentemente en PDF listo para impresión, con tipografías convertidas a curvas, imágenes en alta resolución y sangrados cuando sean necesarios. También podemos revisar otros formatos antes de producir.'
+    },
+    {
+      question: '¿Revisan los archivos antes de imprimir?',
+      answer: 'Sí. Verificamos medidas, resolución, márgenes, sangrados y aspectos técnicos básicos. Si detectamos algún problema, te lo informamos antes de iniciar la producción.'
+    },
+    {
+      question: '¿Pueden hacer el diseño si todavía no tengo un archivo?',
+      answer: 'Sí. Podemos desarrollar o adaptar la pieza gráfica de acuerdo con el formato, el material y la identidad visual de tu proyecto.'
+    },
+    {
+      question: '¿Cuánto tarda la producción?',
+      answer: 'El tiempo depende del producto, la cantidad, los materiales y los acabados. Al cotizar te indicaremos un plazo estimado antes de comenzar.'
+    },
+    {
+      question: '¿Manejan entregas o instalación?',
+      answer: 'Sí. Podemos coordinar entrega y, en determinados proyectos de gran formato, también instalación. La disponibilidad y el costo dependen de la ubicación y las características del trabajo.'
     }
   ],
+
   socials: []
 };
