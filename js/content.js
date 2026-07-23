@@ -1,17 +1,17 @@
 const imageRoutes = {
-  logo: 'images/logo.png',
-  logo_trans: 'images/logo_trans.png',
-  hero: 'images/hero.png',
-  espectaculares: 'images/tesla.png',
-  lonasViniles: 'images/viniles1.png',
-  playeras: 'images/textil.png',
-  tazas: 'images/taza.png',
-  tarjetas: 'images/card.png',
-  publicitario: 'images/publicitario.png',
-  gran_formato: 'images/gran_formato.png',
-  textiles: 'images/textiles.png',
-  promocionales: 'images/promocionales.png',
-  campagna: 'images/campagna.png'
+  logo: 'images/webp/logo.webp',
+  logo_trans: 'images/webp/logo_trans.webp',
+  hero: 'images/webp/hero.webp',
+  espectaculares: 'images/webp/tesla.webp',
+  lonasViniles: 'images/webp/viniles1.webp',
+  playeras: 'images/webp/textil.webp',
+  tazas: 'images/webp/taza.webp',
+  tarjetas: 'images/webp/card.webp',
+  publicitario: 'images/webp/publicitario.webp',
+  gran_formato: 'images/webp/gran_formato.webp',
+  textiles: 'images/webp/textiles.webp',
+  promocionales: 'images/webp/promocionales.webp',
+  campagna: 'images/webp/campagna.webp'
 };
 
 // Sustituye estas rutas por archivos locales en `images/` cuando tengas tus fotografías definitivas.

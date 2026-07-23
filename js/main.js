@@ -78,14 +78,15 @@
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
   }
 
-  function createMedia(image, alt) {
+  function createMedia(image, alt, options = {}) {
+    const { loading = 'lazy' } = options;
     const media = document.createElement('div');
     media.className = 'media';
 
     const img = document.createElement('img');
     img.src = image;
     img.alt = alt || '';
-    img.loading = 'lazy';
+    img.loading = loading;
     img.decoding = 'async';
 
     const fallback = document.createElement('div');
@@ -186,6 +187,7 @@
     const brandLogo = document.querySelector('[data-brand-logo]');
     if (brandLogo && content.companyLogo) {
       brandLogo.src = content.companyLogo;
+      brandLogo.loading = 'lazy';
     }
     get(selectors.brand).textContent = content.companyName;
     get(selectors.heroEyebrow).textContent = content.hero.eyebrow;
@@ -218,7 +220,7 @@
   function createHeroVisual() {
     const frame = document.createElement('article');
     frame.className = 'hero-visual__frame';
-    frame.append(createMedia(content.hero.image, content.hero.imageAlt));
+    frame.append(createMedia(content.hero.image, content.hero.imageAlt, { loading: 'eager' }));
 
    /*const label = document.createElement('div');
     label.className = 'hero-visual__label';
@@ -498,6 +500,7 @@
     });
 
     lightboxImage.addEventListener('error', showImageError);
+    lightboxImage.loading = 'lazy';
 
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape' && state.lightboxOpen) {
