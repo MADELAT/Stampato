@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stampato Creativa: impresión para marcas, empresas, eventos y proyectos que necesitan hacerse notar.">
+  <title>Stampato Creativa</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/content.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img class="brand__logo" data-brand-logo alt="Stampato Creativa" />
+        <span class="brand__text" data-brand></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" data-menu-toggle>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" data-site-nav aria-label="Navegación principal">
+        <ul class="site-nav__list" data-nav-links></ul>
+        <a class="button button--primary header__cta" href="#contacto" data-quote-link></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow" data-hero-eyebrow></p>
+          <h1 class="hero__title" data-hero-title></h1>
+          <p class="hero__lead" data-hero-description></p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#contacto" data-hero-whatsapp></a>
+            <a class="button button--ghost" href="#servicios" data-hero-secondary></a>
+          </div>
+          <ul class="hero__meta" data-hero-meta></ul>
+        </div>
+
+        <div class="hero__visual reveal" data-hero-visual></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-section-label="services"></p>
+          <h2 data-section-title="services"></h2>
+        </div>
+        <div class="cards-grid cards-grid--services" data-services-grid></div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-section-label="gallery"></p>
+          <h2 data-section-title="gallery"></h2>
+        </div>
+        <div class="gallery-grid" data-gallery-grid></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="proceso">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-section-label="process"></p>
+          <h2 data-section-title="process"></h2>
+        </div>
+        <div class="process-grid" data-process-grid></div>
+      </div>
+    </section>
+
+    <section class="section" id="ventajas">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-section-label="advantages"></p>
+          <h2 data-section-title="advantages"></h2>
+        </div>
+        <div class="advantages-grid" data-advantages-grid></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="preguntas-frecuentes">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-section-label="faq"></p>
+          <h2 data-section-title="faq"></h2>
+        </div>
+        <div class="faq" data-faq-list></div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-card reveal">
+          <p class="eyebrow" data-section-label="contact"></p>
+          <h2 data-contact-title></h2>
+          <p class="contact-card__lead" data-contact-description></p>
+          <div class="contact-card__actions">
+            <a class="button button--primary" data-contact-whatsapp></a>
+            <a class="button button--ghost" data-contact-map></a>
+          </div>
+        </div>
+
+        <div class="contact-details reveal">
+          <div class="info-panel" data-contact-info></div>
+          <div class="social-panel" data-social-panel hidden>
+            <h3 data-social-title></h3>
+            <div class="social-links" data-social-links></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p data-footer-copy></p>
+      <p class="footer__year" data-footer-year></p>
+    </div>
+  </footer>
+
+  <button class="floating-whatsapp" type="button" data-floating-whatsapp aria-label="Contactar por WhatsApp"></button>
+
+  <div class="lightbox" data-lightbox hidden aria-hidden="true">
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <figure class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Cerrar vista ampliada">×</button>
+      <img class="lightbox__image" data-lightbox-image alt="">
+      <figcaption class="lightbox__caption" data-lightbox-caption></figcaption>
+    </figure>
+  </div>
+
+  <template data-card-template>
+    <article class="card reveal">
+      <div class="card__media" data-card-media></div>
+      <div class="card__body">
+        <h3 data-card-title></h3>
+        <p data-card-description></p>
+        <div class="card__actions">
+          <a class="button button--small button--primary" data-card-button href="#"></a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <noscript>
+    <div class="noscript">Este sitio necesita JavaScript para mostrar el contenido editable.</div>
+  </noscript>
+</body>
+</html>
