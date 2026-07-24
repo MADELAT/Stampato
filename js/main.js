@@ -66,8 +66,15 @@
     return `https://wa.me/${numericPhone}?text=${text}`;
   }
 
-  function formatPhoneForDisplay(phone) {
-    return String(phone || '').trim();
+  function formatPhoneForDisplay(phone, secondaryPhone) {
+    const primary = String(phone || '').trim();
+    const secondary = String(secondaryPhone || '').trim();
+
+    if (!primary) {
+      return secondary;
+    }
+
+    return secondary ? `${primary} · ${secondary}` : primary;
   }
 
   function buildMapLink(address) {
@@ -204,7 +211,7 @@
 
     const meta = get(selectors.heroMeta);
     meta.innerHTML = '';
-    [content.address, formatPhoneForDisplay(content.whatsapp)].forEach(value => {
+    [content.address, formatPhoneForDisplay(content.whatsapp, content.whatsappSecondary)].forEach(value => {
       if (!value) {
         return;
       }
@@ -311,7 +318,7 @@
     info.innerHTML = '';
 
     const infoItems = [
-      { label: 'WhatsApp', value: formatPhoneForDisplay(content.whatsapp), href: whatsappLink },
+      { label: 'WhatsApp', value: formatPhoneForDisplay(content.whatsapp, content.whatsappSecondary), href: whatsappLink },
       { label: 'Dirección', value: content.address, href: buildMapLink(content.address) }
     ].filter(item => item.value);
 

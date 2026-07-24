@@ -19,8 +19,9 @@ const imageRoutes = {
 
 window.STAMPATO_CONTENT = {
   companyName: 'Stampato Creativa',
-  companyLogo: imageRoutes.logo_trans,
+  companyLogo: 'images/webp/logostampato.webp',
   whatsapp: '+52 7773957777',
+  whatsappSecondary: '+52 7771578149',
   address: 'Río Grijalva 442, zona 1, Vista Hermosa, 62290 Cuernavaca, Mor.',
 
   hero: {
